@@ -5,5 +5,5 @@ export const profile = {
   phone: "+201069658997",
   github: "https://github.com/Ahmed-Alhossiny",
   linkedin: "https://www.linkedin.com/in/ahmed-alhossiny",
-  cvUrl: "../../public/Ahmed_Alhossiny_CV.pdf",
+  cvUrl: "/Ahmed_Alhossiny_CV.pdf",
 };
