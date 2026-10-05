@@ -17,7 +17,7 @@ Then open the local URL Vite prints (usually http://localhost:5173).
 npm run build
 ```
 
-Output goes to `dist/`. Deploy that folder to Vercel, Netlify, or any static host. No server rewrites are needed, because case study pages use hash URLs such as `/#/project/bazaro`.
+Output goes to `dist/`. Deploy that folder to Vercel, Netlify, or any static host. No server rewrites are needed, because case study pages use hash URLs.
 
 ## Where to edit content
 
@@ -29,7 +29,7 @@ Output goes to `dist/`. Deploy that folder to Vercel, Netlify, or any static hos
 
 ## CV download button
 
-Put your CV in `public/` and name it exactly `Ahmed-Alhossiny-CV.pdf`. The "Download CV" button appears automatically when that file exists. To use another name, change `cvUrl` in `src/data/profile.js`.
+Put your CV in `public/`. The "Download CV" button appears automatically when that file exists. To use another name, change `cvUrl` in `src/data/profile.js`.
 
 ## Adding a project
 
