@@ -9,7 +9,6 @@ import Footer from "./components/Footer.jsx";
 import { useReducedMotion } from "./hooks/useReducedMotion.js";
 import { useHashRoute } from "./hooks/useHashRoute.js";
 import { useTheme } from "./hooks/useTheme.js";
-import { useFileExists } from "./hooks/useFileExists.js";
 import { profile } from "./data/profile.js";
 
 const SECTION_ORDER = ["home", "work", "about", "contact"];
@@ -18,7 +17,7 @@ function App() {
   const reduced = useReducedMotion();
   const route = useHashRoute();
   const themeState = useTheme();
-  const cvAvailable = useFileExists(profile.cvUrl, "pdf");
+  const cvAvailable = true;
   const [activeSection, setActiveSection] = useState("home");
   const pendingSection = useRef(null);
   const previousPage = useRef(route.page);
