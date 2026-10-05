@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Alhossiny — Front-End Developer</title>
+  <meta name="description"
+    content="Portfolio and case studies of Ahmed Alhossiny, a front-end developer and Computer Science student building with React, Next.js and TypeScript. Open to internships and junior roles." />
+  <meta name="theme-color" content="#0B0E14" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ahmed Alhossiny — Front-End Developer" />
+  <meta property="og:description"
+    content="Case studies of three shipped projects built with React, Next.js and TypeScript." />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B0E14'/%3E%3Ctext x='16' y='25' font-family='monospace' font-size='26' font-weight='700' text-anchor='middle' fill='%23B893F5'%3EA%3C/text%3E%3C/svg%3E" />
+  <script>
+    (function () {
+      var theme = 'dark';
+      try {
+        var stored = localStorage.getItem('portfolio-theme');
+        if (stored === 'light' || stored === 'dark') {
+          theme = stored;
+        }
+      } catch (error) { }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'light') {
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) {
+          meta.setAttribute('content', '#F7F8FA');
+        }
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <noscript>This portfolio needs JavaScript to run.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
