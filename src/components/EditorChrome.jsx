@@ -77,7 +77,7 @@ function EditorChrome({
           </button>
         </div>
       </div>
-      <nav aria-label="Section navigation" className="flex">
+      <nav aria-label="Section navigation" className="flex overflow-x-auto">
         {tabs}
       </nav>
     </header>
